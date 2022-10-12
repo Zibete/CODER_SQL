@@ -71,6 +71,8 @@ BEGIN
 
 END$$
 
+DELIMITER ;
+
 -- 4. Después de insertar un nuevo empleado se inserta un registro en la tabla logs con los datos ingresados
 
 
@@ -87,3 +89,5 @@ BEGIN
     CONCAT('Agregó un nuevo empleado bajo el registro ', NEW.id_personal));
 
 END$$
+
+DELIMITER ;
